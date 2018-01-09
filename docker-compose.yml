@@ -1,0 +1,9 @@
+version: "3.5"
+services:
+  happy-ubuntu:
+    container_name: happy-ubuntu
+    build: .
+    environment:
+      - NEW_USER=adam
+      - NEW_PASSWORD=test
+      - SSH_ENCRYPTION_ALGORITHM=ed25519
